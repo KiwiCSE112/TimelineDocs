@@ -1,0 +1,54 @@
+<!-- Modal -->
+<div class="modal fade" id="research_testing" role="dialog">
+    <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Research and Testing</h4>
+        </div>
+        <div class="modal-body">
+            <pre>
+Testers
+
+•	TBD: take a look at Ionic if you have time else stick with Electron.
+•	Electron should just be an app shell around our web app. 
+o	Tested Peter Test Component on both Mac OS X and Windows
+o	Things to Consider: Notifications, Menus, Local file sys access, Integrating Keyboard Shortcuts for App Specific Functionality, ,etc
+•	TODO: Test Electron on some simple social network UIs
+•	Where are messages stored <- needs to be stored on person’s computer and a master copy on firebase.
+•	Notifications are an interesting possibility with desktop apps in Electron. <- web sites can also send notifications via some API.
+
+
+Frontend 
+•	Using Adsense not Admob (b/c Admob doesn’t work for web apps)
+•	Stripe might require a backend portion.
+
+Backend 
+•	fixed Travis.
+o	Removed caching in Travis CI as part of the fix
+o	Added two npm installs in the Travis script 
+•	Created staging and production sites for firebase
+o	Travis yaml files push code to firebase sites.
+
+
+Team Leaders 
+•	A basic firebase auth set up working.
+•	NPM Watch and Node Watch are options. 
+•	Potentially: Table different config files for a later date. 
+
+
+Documentation
+•	ESDocs work. Codacy only shows when we break something. (No news is good news)
+•	Stripe can be integrated with React. 
+•	Run ESDocs in build takes around one line of code. 
+            </pre>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+        
+    </div>
+</div>

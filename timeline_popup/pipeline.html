@@ -1,0 +1,42 @@
+<!-- Modal -->
+<div class="modal fade" id="pipeline" role="dialog">
+    <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Pipeline enhancement and tools modification</h4>
+        </div>
+        <div class="modal-body">
+            <pre>
+Updates
+
+•	Pipeline enhancement 
+•	React tests should pass in Travis CI
+•	Create a simpler method for how features should be developed and deployed..
+•	Setup firebase
+•	Create staging site 
+•	Create a production site 
+•	have each git branch push production code to respective firebase sites
+
+Notes:
+For travis CI, we suspect that caching node_modules was the issue which resulted in npm install failing after subsequent pushes to a branch.
+
+For the future:
+•	Implement self-destructing travis CI builds so only the most recent and initially pushed builds are tested. Builds between those should be suspended/killed.
+•	Figure out what “.firebaserc” is used for. It doesn’t seem to be tied to travis.
+•	Travis CI:
+•	Reimplement caching for faster CI tests.
+•	Firebase deployment:
+•	Create a script to deploy to the appropriate firebase site based on which git branch. staging vs production
+•	Have a condition to only push to firebase site when CI tests pass
+            </pre>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+        
+    </div>
+</div>
