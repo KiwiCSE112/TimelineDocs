@@ -1,6 +1,6 @@
 <!-- Modal -->
 <div class="modal fade" id="technology_selection" role="dialog">
-    <div class="modal-dialog">
+    <div class="modal-dialog timeline-modal-dialog">
     
         <!-- Modal content-->
         <div class="modal-content">
@@ -9,30 +9,50 @@
             <h4 class="modal-title">Technology Selection</h4>
         </div>
         <div class="modal-body">
-            <pre>
-Technology Selection 
-Documentation Generation:
-For document generation, we are using ESDocs.
-ESDoc has two goals.
-- To make documentation maintenance comfortable and pleasant
-- To create easy-to-understand documentation. In order to achieve this two goals, ESDoc produces a practical document, measures the coverage, integrates the test code and more.
-Codacy:
-We use a static code analysis tool called Codacy in order to keep our code consistent and as simple as possible. We use this in order to track the progress of our code quality as the project progresses. This tool allows us to set goals we can determine within our team and with our client to ensure code quality. Since people have different measures of quality, we may dial it to our very own specificcations as to what quality means for us and our client. Some of the metrics we can fine tune are:
-- Code Complexity
-- File Structure Complexity
-- Duplication of Code and Files
-- Code Test Coverage
-- Pull Requests, Commits, etc.
-- Security Vulnerablity Analysis
-Once we have set the standards we are to follow, the dashboard this tool provides will allow our client to visualize the quality of work we are completing with a letter grade rating. Internally, we use this to track everyone’s contribution and quality of work by viewing what issues are introduced by whom and how often. In this way, we are able to track bugs in our code to avoid future repetitions of the same mistakes, and thus tune and refine our pipeline if needed. 
+            <h2>Technology Selection</h2>
+            <div class="left-padding">
+                <h4>Documentation Generation:</h4>
+                <div class="left-padding">
+                    For document generation, we are using ESDocs.<br>
+                    ESDoc has two goals.<br>
+                    <div class="left-padding">
+                        - To make documentation maintenance comfortable and pleasant<br>
+                        - To create easy-to-understand documentation. In order to achieve this two goals, ESDoc produces a practical document, measures the coverage, integrates the test code and more.
+                    </div>
+                </div>
+            </div>
 
-Travis CI:
-We use Travis CI as our continuous integration tool. It allows us to centralize our builds and deployments. While adding another layer of quality check through testing and deployment in a controlled environment, independent of any one’s developer’s local environment. 
-Since we may control this independent environment the way we want, it allows us to have a separate environment where we may run our build process and incrementally add new features to our project. Not only this, we can control what gets into the build in an incremental manner. We perform a series of tests that make sure that what we develop will work in the proposed environment we agree upon with our client. 
-It also allows us to perform code reviews, so we can add a human aspect to how our code should be in terms of quality, structure, and readability. Lastly, we can automate many tasks that would otherwise require much developer time, saving our client time and money.
-Testing
-We have organized our repository to make it easy to navigate by anyone who may want to look at our current work by using familiar names that are easy to understand and remember. We have also made our best effort to keep different technologies separate so that they may not interfere with each other with being run.                
-            </pre>
+            <div class="left-padding">
+                <h4>Codacy:</h4>
+                <div class="left-padding">
+                    We use a static code analysis tool called Codacy in order to keep our code consistent and as simple as possible. We use this in order to track the progress of our code quality as the project progresses. This tool allows us to set goals we can determine within our team and with our client to ensure code quality. Since people have different measures of quality, we may dial it to our very own specificcations as to what quality means for us and our client. Some of the metrics we can fine tune are:<br>
+                    <div class="left-padding">
+                        - Code Complexity<br>
+                        - File Structure Complexity<br>
+                        - Duplication of Code and Files<br>
+                        - Code Test Coverage<br>
+                        - Pull Requests, Commits, etc.<br>
+                        - Security Vulnerablity Analysis<br><br>
+                    </div>
+                    Once we have set the standards we are to follow, the dashboard this tool provides will allow our client to visualize the quality of work we are completing with a letter grade rating. Internally, we use this to track everyone’s contribution and quality of work by viewing what issues are introduced by whom and how often. In this way, we are able to track bugs in our code to avoid future repetitions of the same mistakes, and thus tune and refine our pipeline if needed. 
+                </div>
+            </div>
+
+            <div class="left-padding">
+                <h4>Travis CI:</h4>
+                <div class="left-padding">
+                    We use Travis CI as our continuous integration tool. It allows us to centralize our builds and deployments. While adding another layer of quality check through testing and deployment in a controlled environment, independent of any one’s developer’s local environment. <br><br>
+                    Since we may control this independent environment the way we want, it allows us to have a separate environment where we may run our build process and incrementally add new features to our project. Not only this, we can control what gets into the build in an incremental manner. We perform a series of tests that make sure that what we develop will work in the proposed environment we agree upon with our client. <br><br>
+                    It also allows us to perform code reviews, so we can add a human aspect to how our code should be in terms of quality, structure, and readability. Lastly, we can automate many tasks that would otherwise require much developer time, saving our client time and money.
+                </div>
+            </div>
+
+            <div class="left-padding">
+                <h4>Testing:</h4>
+                <div class="left-padding">
+                    We have organized our repository to make it easy to navigate by anyone who may want to look at our current work by using familiar names that are easy to understand and remember. We have also made our best effort to keep different technologies separate so that they may not interfere with each other with being run.                
+                </div>
+            </div>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
