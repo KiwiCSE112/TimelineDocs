@@ -333,7 +333,7 @@ a.article, a.article:hover {
   }
   .timeline-wrapper .timeline-item:nth-child(even) .timeline-content {
     float: right;
-    padding: 40px 30px 10px 30px;
+    /* padding: 40px 30px 10px 30px; */
   }
   .timeline-wrapper .timeline-item:nth-child(even) .timeline-content .date {
     right: auto;
