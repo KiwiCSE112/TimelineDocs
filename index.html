@@ -26,6 +26,7 @@
         <div id="page6"></div>
         <div id="page7"></div>
         <div id="page8"></div>
+        <div id="page9"></div>
 
         <!-- About Use Image Modal -->
         <div id="image-modal" class="image-modal">
@@ -111,6 +112,7 @@
                             <li><a href="#timeline6">Recap and utilizing the work</a></li>
                             <li><a href="#timeline7">Progress and goals</a></li>
                             <li><a href="#timeline8">Mockup</a></li>
+                            <li><a href="#timeline9">Team Kiwi Demo</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -132,7 +134,7 @@
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="kiendocs/index.html" target="_blank">Documentation</a></li>
                                 <li><a href="https://drive.google.com/drive/folders/1TuENYqDE6HTF_uMZj8_KE3YxVHV9wVmf" target="_blank">Presentations</a></li>
-                                <li><a href="#" onclick="onComingSoonClick()">Future work</a></li>
+                                <li><a href="https://docs.google.com/document/d/1V6R9UV0oPDziW3WgUYCZ7JOVpMxsNVHmI39S7iL0I2Q/edit?usp=sharing" target="_blank">Future work</a></li>
                                 <li><a href="#" onclick="onAboutUsClick()">About Us</a></li>
                             </ul>
                         </div>
@@ -148,6 +150,12 @@
                     
                                 <div class="timeline-content js--fadeInLeft">
                                     <h2>Objective and technology decisions</h2>
+
+                                    <p>
+                                        1.	Space shuttle Article<br>
+                                        2.	Decide React or Web Components<br>
+                                        3.	Conveyor belt<br>
+                                    </p>
                                     <a class="bnt-more" data-toggle="modal" data-target="#objective_technology" href="#">More</a>
                                 </div>
                             </div> 
@@ -218,17 +226,72 @@
                             <div class="timeline-item" id="timeline8">
                                 <div class="timeline-img"></div>
                     
-                                <div class="timeline-content js--fadeInRight">
-                                    <h2>Mockup</h2>
+                                <div class="timeline-content timeline-card js--fadeInRight">
+                                    <div class="timeline-img-header">
+                                        <a href="#mockup" data-toggle="modal" class="card-background"></a>
+                                        <h2>Mockup</h2>
+                                    </div>
+
                                     <a class="bnt-more" data-toggle="modal" data-target="#mockup" href="#">More</a>
                                 </div>
                             </div>
+
+                            <div class="timeline-item" id="timeline9">
+                                <div class="timeline-img"></div>
+                    
+                                <div class="timeline-content timeline-card js--fadeInRight">
+                                    <div class="timeline-img-header">
+                                        <a href="#team_kiwi" data-toggle="modal" class="card-background"></a>
+                                        <h2>Team Kiwi Demo</h2>
+                                    </div>
+                                    
+                                    <a class="bnt-more" data-toggle="modal" data-target="#team_kiwi" href="#">More</a>
+                                </div>
+                            </div>
+
+                            
                         </div>
                     </section>
                 </div>
+
+                <div class="footer">
+                    <div class="container-fluid footer-content">
+                        <div class="row social">
+                        <div class="col-md-6 d-flex align-items-center">
+                            <img class="footer-logo" src="images/Kiwi_Logo.png" alt="Team Kiwi">
+                        </div>
+                        <div class="col-md-2 pt120">
+                            <p class="fs18fw mb30 title">RESOURCES</p>
+                            <p><a class="link" href="#">Guide</a></p>
+                            <p><a href="#">FAQ</a></p>
+                            <p><a href="#">Who we are</a></p>
+                            <p><a href="#">Press</a></p>
+                            <p><a href="#">Affiliates</a></p>
+                            <p><a href="#">GitHub</a></p>
+                        </div>
+                        <div class="col-md-2 pt120">
+                            <p class="fs18fw mb30 title">SOCIAL</p>
+                            <p><a href="#">Twitter</a></p>
+                            <p><a href="#">Medium</a></p>
+                            <p><a href="#">Reddit</a></p>
+                            <p><a href="#">Telegram</a></p>
+                            <p><a href="#">Instagram</a></p>
+                            <p><a href="#">Facebook</a></p>
+                        </div>
+                        <div class="col-md-2 pt120">
+                            <p class="fs18fw mb30 title">LEGAL</p>
+                            <p><a href="#">Privacy Policy</a></p>
+                            <p><a href="#">Terms of Use</a></p>
+                        </div>
+                    </div>
+                    <div class="row text-center" style="margin-top:20px">
+                        <div class="col-md-12">
+                            <span class="fs14wo">® Team Kiwi 2018. All Rights Reserved.</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
 
         <!-- jQuery CDN -->
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -254,6 +317,7 @@
                 $("#page6").load("timeline_popup/recap.html");
                 $("#page7").load("timeline_popup/progress_goals.html");
                 $("#page8").load("timeline_popup/mockup.html");
+                $("#page9").load("timeline_popup/team_kiwi.html");
             });
         </script>
 
