@@ -1,0 +1,68 @@
+<!-- Modal -->
+<div class="modal fade" id="research_testing" role="dialog">
+    <div class="modal-dialog timeline-modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Research and Testing</h4>
+        </div>
+        <div class="modal-body">
+            <h4>Testers</h4>
+            <div class="left-padding">
+                •	TBD: take a look at Ionic if you have time else stick with Electron.<br>
+                •	Electron should just be an app shell around our web app.<br>
+                <div class="left-padding">
+                    o	Tested Peter Test Component on both Mac OS X and Windows<br>
+                    o	Things to Consider: Notifications, Menus, Local file sys access, Integrating Keyboard Shortcuts for App Specific Functionality, ,etc<br>
+                </div>
+                •	TODO: Test Electron on some simple social network UIs<br>
+                •	Where are messages stored <- needs to be stored on person’s computer and a master copy on firebase.<br>
+                •	Notifications are an interesting possibility with desktop apps in Electron. <- web sites can also send notifications via some API.<br>
+            </div>
+
+            <br>
+            <h4>Frontend</h4>
+            <div class="left-padding">
+                •	Using Adsense not Admob (b/c Admob doesn’t work for web apps)<br>
+                •	Stripe might require a backend portion.<br>
+            </div>
+
+            <br>
+            <h4>Backend</h4>
+            <div class="left-padding">
+                •	fixed Travis.
+                <div class="left-padding">
+                    o	Removed caching in Travis CI as part of the fix<br>
+                    o	Added two npm installs in the Travis script<br>
+                </div>
+                •	Created staging and production sites for firebase<br>
+                <div class="left-padding">
+                    o	Travis yaml files push code to firebase sites.
+                </div>
+            </div>
+
+            <br>
+            <h4>Team Leaders</h4>
+            <div class="left-padding">
+                •	A basic firebase auth set up working.<br>
+                •	NPM Watch and Node Watch are options.<br>
+                •	Potentially: Table different config files for a later date.<br>
+            </div>
+
+            <br>
+            <h4>Documentation</h4>
+            <div class="left-padding">
+                •	ESDocs work. Codacy only shows when we break something. (No news is good news)<br>
+                •	Stripe can be integrated with React.<br>
+                •	Run ESDocs in build takes around one line of code.<br>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+        
+    </div>
+</div>
